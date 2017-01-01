@@ -15,7 +15,7 @@ emissions_by_year <- aggregate(Emissions ~ year + type, emissions_baltimore, FUN
 # Generate the graph
 png(filename='plot3.png')
 
-# Set up the initial ggplot
+# Plot
 emissions_plot <- ggplot(emissions_by_year, aes(factor(year), Emissions)) + 
     geom_bar(stat="identity") + 
     facet_wrap(~type, nrow=2, ncol=2) + 
