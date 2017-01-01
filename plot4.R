@@ -25,3 +25,4 @@ barplot(emissions_by_year$Emissions / 1000,
         xlab='Year', ylab='PM2.5 (kilotons)')
 
 dev.off()
+
